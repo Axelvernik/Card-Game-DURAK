@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img {
+    height: 125px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px black;
+    display: flex;
+    margin: 0 -5px;
+    width: 90px;
+}
+.player img:hover {
+   box-shadow: 3px -3px 5px rgb(7, 66, 7);
+   height: 130px;
+   
+}
+.game{
+    display: block;
+    height: 95vh;
+   overflow-y: auto;
+}
+.bot {
+    margin-top: 1rem;
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+.table {
+    display: flex;
+    min-height: 120px;
+    margin: 4rem;
+}
+
+
+.table img {
+    margin-left: -20px;
+}
+.trump {
+    display: grid;
+    grid-template-columns: 20% ;
+    justify-content: left;
+   margin: auto 0;
+}
+.center {
+    display: flex;
+    margin: 2rem;
+    justify-content: space-around;
+}
+.player {
+    display: flex;
+    height: 140px;
+    justify-content: center;
+    align-items:flex-end; 
+}
+
+.trump > img {
+    box-shadow: 0px 0px 2px rgb(87, 87, 87);
+    z-index: 0;
+}
+
+p {
+display: flex;
+ justify-content: center;
+ margin-top: 2rem;
+ text-shadow: 2px 2px 2px rgb(0, 0, 0);;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    background-color: rgb(25, 97, 49);
+    padding: 5px;
+    vertical-align: center;
+    box-shadow: 0 0 10px rgb(71, 116, 60) olivedrab;
+    height: 25px;
+}
+.menu button {
+    display: flexbox;
+    opacity: 0.82;
+    height: 24px;
+width: 100px;
+}
+.menu button a {
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.menu button:hover {
+    opacity: 1;
+}
+.menu p {
+    display: inline-flex;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    font-size: small;
+    justify-content: center;
+    align-self:center;
+}
+
+.btnMenu{
+    background-color:rgba(17, 218, 151, 0.555);
+    font: 1rem sans-serif;
+    border: none;
+    border-radius: 10px;
+    color:burlywood;
+}
