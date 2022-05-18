@@ -3,8 +3,8 @@ import {cards} from './cards.js'
 import {library} from './library.js'
 import {bot} from './bot.js'
 import {menu} from './menu.js'
- export const gameTable = { 
-    cards : [],  
+ export const gameTable = {
+    cards : [],
     menu: document.querySelector('.menu'),
     mainBtn : document.querySelector('.mainButton'), // начальная кнопка
     message : document.querySelector('.console'), //Сообщение внизу, когда ход игрока
@@ -18,11 +18,11 @@ import {menu} from './menu.js'
         table.append(handCard);
        })
     },
-    
+
     addBtnTake() {
         let btnTake = document.createElement('button')
         btnTake.classList = 'btn'
-        btnTake.textContent = 'Забрать'
+        btnTake.textContent = 'Take'
         btnTake.style.opacity = '0'
         btnTake.style.transition = '0.75s opacity linear;'
         this.message.append(btnTake)
@@ -31,7 +31,7 @@ import {menu} from './menu.js'
         }, 750)
         btnTake.addEventListener('click', function x(){
             if (cards.layout.length === 0 && bot.cards.length === 0) {
-              setTimeout(() => menu.showMessage('Вы проиграли! Попробуйте еще...'), 0)  
+              setTimeout(() => menu.showMessage('Вы проиграли! Попробуйте еще...'), 0)
             } else {
                 user.cards.push(gameTable.cards.pop())
                 btnTake.remove()

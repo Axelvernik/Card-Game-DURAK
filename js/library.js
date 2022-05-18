@@ -12,14 +12,14 @@ export  const library = {
     cardSuit(str) { //масть
         return str.split('/')[2].split('.')[0].slice(-1)
     },
-    
+
     checkFirstMove() {
         let botTrumps = bot.cards.filter(i => library.cardSuit(i) === cards.trump)
         let userTrumps = user.cards.filter(i => library.cardSuit(i) === cards.trump)
         let botMin = botTrumps.map(i => library.cardValue(i)).sort((a,b) => a-b)[0]
         let userMin = userTrumps.map(i => library.cardValue(i)).sort((a,b) => a-b)[0]
             if(botTrumps.length === 0 && userTrumps.length !== 0 ) {
-            user.myMove = true; 
+            user.myMove = true;
         } else if(userTrumps.length === 0 && botTrumps.length !== 0 ) {
             user.myMove = false;
         } else if (botMin > userMin ) {
@@ -44,11 +44,11 @@ export  const library = {
                     mayMoveArr.push(i)
                 }
             }
-    
+
         mayMoveArr = mayMoveArr.filter(i => this.cardValue(i) > this.cardValue(tableCard))
         .sort((a,b) => this.cardValue(a) - this.cardValue(b))
         mayMoveArr = [...mayMoveArr, ...personTrumps]
-        } 
+        }
         return mayMoveArr;
     },
 
@@ -67,28 +67,23 @@ export  const library = {
             gameTable.message.innerHTML = ''
         },1450)
         },
-        
+
     trumpText() {
         switch (cards.trump) {
             case 'p':
-                menu.showMessage('Козырь пика')
+                menu.showMessage('Trump spades')
                 break;
             case 'h':
-                menu.showMessage('Козырь чирва')
+                menu.showMessage('Trump hearts')
                 break;
             case 't':
-                menu.showMessage('Козырь трефа')
+                menu.showMessage('Trump clubs')
                 break;
             case 'b':
-                menu.showMessage('Козырь бубна')
+                menu.showMessage('Trump diamonds')
                 break;
-            default: 
+            default:
                 menu.showMessage('Козырь не определен! Ошибка!')
         }
     }
 }
-
-
-
-
-

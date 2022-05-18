@@ -16,7 +16,7 @@ gameTable.mainBtn.addEventListener('click', function x() {
 
     setTimeout(() => {
         document.body.style.opacity = '1'
-        const h1 = document.querySelector('#mainH')
+        const h1 = document.querySelector('#gif')
         const mainDiv = document.querySelector('.main')
         gameTable.mainBtn.removeEventListener('click', x)
         h1.remove()
