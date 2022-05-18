@@ -1,5 +1,6 @@
 body {
     background: url('/bg3.jpeg');
+        background-size: cover;
     color: #f2ec24;
     font-family: 'Press Start 2P', cursive;
     /*font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif*/
@@ -14,9 +15,9 @@ body {
 }
 .mainButton {
     font-family: inherit;
-    width: 200px;
-    height: 60px;
-    position: absolute;
+    width: 400px;
+    height: 100px;
+    /*position: absolute;*/
     top: 0;
     right: 0;
     bottom: 0;
