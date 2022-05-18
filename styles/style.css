@@ -25,6 +25,7 @@ body {
     background-color:  rgba(255, 255, 209, 0.7);
     font-size: 16px;
     outline: none;
+    cursor: pointer;
 }
 .mainButton:hover {
     outline: none;
