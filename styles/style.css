@@ -1,7 +1,8 @@
 body {
     background-color: #38915a;
     color: #f2ec24;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Press Start 2P', cursive;
+    /*font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif*/
 }
 .main {
     width: 100%;
@@ -34,7 +35,7 @@ body {
 
 
 h1{
-    padding: 100px;
+    padding: 50px;
     display: flex;
     justify-content: center;
     margin-bottom: 0;
