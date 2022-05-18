@@ -8,7 +8,7 @@ import {cardSound, suffleCardsSound} from './audio.js'
 const menuBtn =  document.createElement('button')
 menuBtn.classList.add('btnMenu')
 gameTable.mainBtn.addEventListener('click', function x() {
-       
+
     document.body.className = 'opacityAnimation'
     setTimeout(() => {
             document.body.className = ''
@@ -24,7 +24,7 @@ gameTable.mainBtn.addEventListener('click', function x() {
 
         const linkSelf = document.createElement('a')
         linkSelf.setAttribute('href', 'index.html')
-        linkSelf.textContent = 'На главную'
+        linkSelf.textContent = 'Back to Main'
         menuBtn.append(linkSelf)
         gameTable.menu.append(menuBtn)
         suffleCardsSound.play()
@@ -42,4 +42,3 @@ gameTable.mainBtn.addEventListener('click', function x() {
     },1500)
 
 })
-
