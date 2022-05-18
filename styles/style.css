@@ -11,7 +11,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    overflow: auto;
+    /*overflow: auto;*/
 }
 .mainButton {
     font-family: inherit;
@@ -21,7 +21,7 @@ body {
 
     margin: auto;
     display: block;
-        margin-top: 50px;
+        margin-top: 550px;
     background-color:  rgba(255, 255, 209, 0.7);
     font-size: 16px;
     outline: none;
