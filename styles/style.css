@@ -26,6 +26,7 @@ body {
     font-size: 16px;
     outline: none;
     cursor: pointer;
+    z-index: 9999999;
 }
 .mainButton:hover {
     outline: none;
